@@ -1,0 +1,72 @@
+[
+  {
+    "id": "arr-1",
+    "topic": "Arrays",
+    "question": "What is the time complexity of accessing an element by index in an array?",
+    "answer": "O(1) constant time. Arrays store elements in contiguous memory, so the address is computed directly from the base address plus the index offset.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "arr-2",
+    "topic": "Arrays",
+    "question": "How does Kadane's algorithm find the maximum subarray sum?",
+    "answer": "It iterates once through the array, tracking the current subarray sum and resetting it to 0 when it goes negative. It runs in O(n) time and O(1) space.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "ll-1",
+    "topic": "Linked Lists",
+    "question": "What is the time complexity of inserting a node at the head of a singly linked list?",
+    "answer": "O(1). You create a new node, point its next to the current head, and update the head pointer. No shifting of elements is needed.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "ll-2",
+    "topic": "Linked Lists",
+    "question": "How do you detect a cycle in a linked list?",
+    "answer": "Use Floyd's cycle detection (tortoise and hare). A slow pointer moves one step and a fast pointer moves two steps; if they meet, a cycle exists. It runs in O(n) time and O(1) space.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "tree-1",
+    "topic": "Trees",
+    "question": "What is the difference between a binary tree and a binary search tree?",
+    "answer": "A binary tree allows each node to have at most two children with no ordering rule. A BST adds the constraint that left children are smaller and right children are larger than the parent.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "tree-2",
+    "topic": "Trees",
+    "question": "What is the time complexity of search, insert, and delete in a balanced BST?",
+    "answer": "All three operations are O(log n) in a balanced BST because the height is kept at log n. In the worst case (skewed tree), they degrade to O(n).",
+    "difficulty": "medium"
+  },
+  {
+    "id": "graph-1",
+    "topic": "Graphs",
+    "question": "What is the difference between BFS and DFS?",
+    "answer": "BFS explores level by level using a queue and finds the shortest path in unweighted graphs. DFS explores as deep as possible using a stack (or recursion). Both run in O(V + E) time.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "graph-2",
+    "topic": "Graphs",
+    "question": "How does Dijkstra's algorithm work and when does it fail?",
+    "answer": "It greedily picks the unvisited node with the smallest tentative distance and relaxes its neighbors, using a min-heap for O((V + E) log V) time. It fails on graphs with negative edge weights.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "dp-1",
+    "topic": "Dynamic Programming",
+    "question": "What are the two key properties a problem must have for DP to apply?",
+    "answer": "Optimal substructure (an optimal solution is built from optimal solutions to subproblems) and overlapping subproblems (the same subproblems are solved repeatedly). Memoization or tabulation avoids redundant work.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "dp-2",
+    "topic": "Dynamic Programming",
+    "question": "How do you solve the 0/1 Knapsack problem with DP?",
+    "answer": "Build a 2D table dp[i][w] where each cell stores the max value using the first i items with capacity w. For each item you either skip it or include it. Time and space are O(n * W).",
+    "difficulty": "hard"
+  }
+]
