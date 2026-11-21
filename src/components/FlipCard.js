@@ -14,7 +14,6 @@ export default function FlipCard({ card, isFlipped, onFlip }) {
     rotate.value = withTiming(isFlipped ? 180 : 0, { duration: 200 });
   }, [isFlipped]);
 
-  // Hide face past 90 degrees to avoid backface mirroring artifacts on Android
   const frontStyle = useAnimatedStyle(() => ({
     transform: [{ perspective: 1000 }, { rotateY: `${rotate.value}deg` }],
     opacity: rotate.value <= 90 ? 1 : 0,

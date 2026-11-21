@@ -9,7 +9,6 @@ import { COLORS, SIZES } from '../config.js';
 
 const Tab = createBottomTabNavigator();
 
-// Minimal geometric line icons rendered directly with Views (no font asset dependencies)
 function TabIcon({ name, color }) {
   if (name === 'Decks') {
     return (

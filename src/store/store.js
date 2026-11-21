@@ -17,7 +17,6 @@ store.subscribe(() => {
     const state = store.getState().cards;
     AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(state)).catch(() => {});
   } catch {
-    // Ignore serialization failures
   }
 });
 

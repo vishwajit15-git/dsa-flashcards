@@ -135,7 +135,7 @@ export default function StudyScreen({ navigation }) {
                   </TouchableOpacity>
                 </View>
               ) : (
-                <Text style={styles.prompt}>Tap card to flip</Text>
+                <Text style={styles.hint}>Tap card to flip</Text>
               )}
             </View>
           </View>
@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
     fontSize: SIZES.body,
     fontWeight: '600',
   },
-  prompt: {
+  hint: {
     color: COLORS.muted,
     fontSize: SIZES.small,
     textAlign: 'center',

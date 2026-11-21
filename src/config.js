@@ -21,7 +21,6 @@ export const SPACING = {
   lg: 32,
 };
 
-// Leitner intervals in days: box 1 (immediate), box 2 (1 day), box 3 (3 days)
 export const BOX_INTERVALS = {
   1: 0,
   2: 1,
